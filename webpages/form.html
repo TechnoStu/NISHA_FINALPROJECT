@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FEEDBACKFORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/images/header.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="testbox">
+        <!--<form action="https://api.web3forms.com/submit" method="POST" id="feedbackForm">-->
+            <form>
+            <h1><b>ADVENTURE TRAVEL FEEDBACK FORM</b></h1>
+            <p><h3>Please help us improve our tourism services by filling in our feedback form. Thank you!</h3></p>
+            <!--<input type="hidden" name="access_key" value="25d66ba3-89ca-4ad1-9306-336fe688111f"> -->
+
+            <fieldset>
+                <legend>Name</legend>
+                <label for="name">ENTER YOUR NAME:</label><br>
+                <input type="text" id="name" name="name" required><br>
+            </fieldset> <br><br>
+
+            <fieldset>
+                <legend>EMAIL</legend>
+                <label for="email">ENTER YOUR EMAIL:</label><br>
+                <input type="email" id="email" name="email" required><br>
+            </fieldset> <br><br>
+
+            <fieldset>
+                <legend>Location You Visited</legend>
+                <label for="location">LOCATION YOU VISITED:</label><br>
+                <select id="location" name="location" required>
+                    <option value="">Please Select</option>
+                    <option value="SPAIN">SPAIN</option>
+                    <option value="ITALY">ITALY</option>
+                    <option value="BARCELONA">BARCELONA</option>
+                    <option value="DUBAI">DUBAI</option>
+                    <option value="PARIS">PARIS</option>
+                    <option value="TOKYO">TOKYO</option>
+                </select><br>
+            </fieldset> <br><br>
+
+            <fieldset>
+                <legend>Day Visited<span>*</span></legend>
+                <div class="day-visited">
+                    <input type="date" name="dayvisited" id="dayvisited"  required/>
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+            </fieldset> <br><br>
+
+            <fieldset>
+                <legend>Duration of Trip</legend>
+                <label for="trip_duration">How many days did you spend at the destination?</label><br>
+                <input type="number" id="trip_duration" name="trip_duration" min="1" required><br>
+            </fieldset> <br><br>
+
+            <fieldset>
+                <legend>PHONE<span>*</span></legend>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="000-000-0000">
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>TELL US ABOUT YOUR EXPERIENCES</legend>
+                <table>
+                    <tr>
+                        <th class="first-col">Categories</th>
+                        <th>Amazing</th>
+                        <th>Good</th>
+                        <th>Decent</th>
+                        <th>Disappointing</th>
+                    </tr>
+                    <tr>
+                        <td class="first-col">DESTINATION SATISFACTION</td>
+                        <td><input type="radio" name="Destination" value="0"/></td>
+                        <td><input type="radio" name="Destination" value="1" /></td>
+                        <td><input type="radio" name="Destination" value="2"/></td>
+                        <td><input type="radio" name="Destination" value="3"/></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">TOUR GUIDE/SERVICES</td>
+                        <td><input type="radio" name="Service" value="0" /></td>
+                        <td><input type="radio" name="Service" value="1" /></td>
+                        <td><input type="radio" name="Service" value="2" /></td>
+                        <td><input type="radio" name="Service" value="3" /></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">ACTIVITIES/ATTRACTIONS</td>
+                        <td><input type="radio" name="Activities" value="0"/></td>
+                        <td><input type="radio" name="Activities" value="1"/></td>
+                        <td><input type="radio" name="Activities" value="2" /></td>
+                        <td><input type="radio" name="Activities" value="3" /></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">ACCOMMODATION</td>
+                        <td><input type="radio" name="Accommodation" value="0"/></td>
+                        <td><input type="radio" name="Accommodation" value="1" /></td>
+                        <td><input type="radio" name="Accommodation" value="2" /></td>
+                        <td><input type="radio" name="Accommodation" value="3"/></td>
+                    </tr>
+                   <tr>
+                        <td class="first-col">LOCAL CULTURE AND CUISINE</td>
+                        <td><input type="radio" name="Culture" value="0"/></td>
+                        <td><input type="radio" name="Culture" value="1" /></td>
+                        <td><input type="radio" name="Culture" value="2" /></td>
+                        <td><input type="radio" name="Culture" value="3" /></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">SAFETY AND SECURITY</td>
+                        <td><input type="radio" name="Safety" value="0" /></td>
+                        <td><input type="radio" name="Safety" value="1" /></td>
+                        <td><input type="radio" name="Safety" value="2" /></td>
+                        <td><input type="radio" name="Safety" value="3" /></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">SPEED OF SERVICE</td>
+                        <td><input type="radio" name="Speed" value="0" /></td>
+                        <td><input type="radio" name="Speed" value="1" /></td>
+                        <td><input type="radio" name="Speed" value="2" /></td>
+                        <td><input type="radio" name="Speed" value="3" /></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">Overall Experience</td>
+                        <td><input type="radio" name="Experience" value="0"/></td>
+                        <td><input type="radio" name="Experience" value="1" /></td>
+                        <td><input type="radio" name="Experience" value="2" /></td>
+                        <td><input type="radio" name="Experience" value="3" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <h3><b>Feel free to add any other comments or suggestions:</b></h3>
+            <textarea rows="5" name="comments"></textarea>
+            <p><b><h4>The information given within the Feedback Form will be used for service improvement only and are strictly confidential.</h4></b></p>
+            <div class="btn-block">
+                <button type="submit" id="feedbackForm"> <a href="thankyou.html" class="send"> SEND FEEDBACK</a></button>
+            </div>
+        <a href="/webpages/index.html" class ="right-link"> HOME PAGE</a> 
+        </form>
+    </div>
+    <script src="/js/validation.js"></script>
+</body> 
+</html>
